@@ -4,7 +4,7 @@ export default function Stats(){
     return(
         <>
             <section className="xui-py-3 xui-container">
-                <div className="xui-d-flex xui-flex-ai-center xui-flex-jc-space-between">
+                <div className="xui-d-flex xui-flex-ai-center xui-lg-flex-dir-row xui-flex-dir-column xui-flex-jc-space-between">
                     <div>
                         <h3 className="xui-font-sz-300 xui-font-9">+<CountUp start={0} end={150} duration={2} /></h3>
                         <p className="xui-font-sz-80 xui-opacity-6 xui-mt-half">Farm Produce </p>

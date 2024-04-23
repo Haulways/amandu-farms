@@ -13,7 +13,7 @@ export default function Footer(){
     return(
         <>
             <section className="xui-pt-3 xui-pb-5 xui-container footer">
-                <div className="xui-d-flex xui-flex-ai-center xui-py-2 xui-pos-relative footer-line-holder xui-flex-jc-space-between xui-flex-ai-center">
+                <div className="xui-lg-d-flex xui-d-none xui-flex-ai-center xui-py-2 xui-pos-relative footer-line-holder xui-flex-jc-space-between xui-flex-ai-center">
                     <p className="xui-font-sz-90">Join Us</p>
                     <p className="xui-font-sz-90 amd-text-green bold-font">Amandu Farm</p>
                     <p className="xui-font-sz-90 bold-font">&copy; 2020 Powered by Grascope</p>

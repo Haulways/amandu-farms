@@ -75,6 +75,7 @@ body{
 .search-keyword{
   border: 1.5px solid #D9D9D9
 }
+
 .another-nav-color{
   background-color: var(--light-grey);
 }
@@ -96,6 +97,9 @@ body{
     color: #FFF;
     font-family: "poppins-bold";
     font-weight: 500;
+}
+.lg-mt-14{
+  margin-top: 14rem;
 }
 .amd-nav .signup{
     background-color: #FFF;
@@ -208,7 +212,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #000;
     color: var(--blue-light);
 }
 .hsd-loader-screen .hsd-loader-holder {
@@ -231,6 +235,9 @@ body{
     animation-duration: .8s;
     animation-timing-function: linear;
 }
+.xui-lg-pos-absolute{
+  position: absolute;
+}
 @keyframes loader {
     from {
         left: -72px;
@@ -238,4 +245,28 @@ body{
     to {
         left: 200px;
     }
+}
+
+@media(max-width:900px){
+  .amd-header-middle{
+    width: 100%;
+  }
+  .xui-pos-static{
+    position: static;
+  }
+  .mt-14{
+    margin-top: 1rem;
+  }
+  .xui-navbar .animate ul li a {
+    color: #000 !important;
+  }
+  .xui-navbar .menu span{
+    background-color: #FFF;
+  }
+  .xui-navbar .menu.animate span{
+    background-color: #000;
+  }
+  .xui-bg-black{
+    background-color: #000 !important;
+  }
 }

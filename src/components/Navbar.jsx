@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import NavLogo from "../assets/images/nav-logo.png";
 
 const Navbar = () => {
     const location = useLocation();
@@ -49,7 +50,7 @@ const Navbar = () => {
         <nav className={`xui-navbar amd-nav dark-color ${navbarColor} xui-container pd-nav xui-text-black`} brand="true" layout="2" menu="2">
             <div className="brand xui-h-fluid-100">
                 <HashLink className="xui-text-dc-none xui-h-fluid-100 xui-text-inherit xui-d-inline-flex xui-flex-ai-center" to={'/'}>
-                    <h1 className='xui-font-sz-150 xui-font-9'>Amandu Farms</h1>
+                    <img src={NavLogo} className="xui-img-200" alt="" />
                     {/* <span className="xui-ml-half xui-d-inline-block xui-font-1 xui-font-w-bold">Kathy</span> */}
                 </HashLink>
             </div>
@@ -83,9 +84,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span className={location.pathname === '/privacy-policy' ? 'xui-bg-black' : 'xui-bg-white'}></span>
+                    <span className={location.pathname === '/privacy-policy' ? 'xui-bg-black' : 'xui-bg-white'}></span>
+                    <span className={location.pathname === '/privacy-policy' ? 'xui-bg-black' : 'xui-bg-white'}></span>
                 </div>
             </div>
         </nav>
