@@ -14,9 +14,9 @@ export default function Footer(){
         <>
             <section className="xui-pt-3 xui-pb-5 xui-container footer">
                 <div className="xui-lg-d-flex xui-d-none xui-flex-ai-center xui-py-2 xui-pos-relative footer-line-holder xui-flex-jc-space-between xui-flex-ai-center">
-                    <p className="xui-font-sz-90">Join Us</p>
-                    <p className="xui-font-sz-90 amd-text-green bold-font">Amandu Farm</p>
-                    <p className="xui-font-sz-90 bold-font">&copy; 2020 Powered by Grascope</p>
+                    <p className="xui-font-sz-90 xui-w-400">Join Us</p>
+                    <p className="xui-font-sz-90 amd-text-green bold-font xui-text-center" style={{"width": "calc(100% - 800px)"}}>Amandu Farm</p>
+                    <p className="xui-font-sz-90 xui-w-400 bold-font xui-text-right">&copy; 2020 Powered by Grascope</p>
                 </div>
                 <div className='xui-d-grid xui-lg-grid-col-4 xui-grid-col-1 xui-lg-grid-gap-1 xui-grid-gap-2'>
                     <div>
@@ -25,20 +25,20 @@ export default function Footer(){
                     </div>
                     <div>
                         <p className='xui-font-sz-90 bold-font amd-text-green'>Quick Links</p>
-                        <HashLink smooth to="#" className="xui-opacity-6 xui-font-sz-80">About us</HashLink>
-                        <HashLink smooth to="#" className="xui-opacity-6 xui-font-sz-80 xui-mt-1-half">Contact us</HashLink>
+                        <HashLink smooth to="/#about" className="xui-opacity-6 xui-font-sz-80">About us</HashLink>
+                        <HashLink smooth to="/#contact" className="xui-opacity-6 xui-font-sz-80 xui-mt-1-half">Contact us</HashLink>
                     </div>
                     <div>
                         <p className='xui-font-sz-90 bold-font amd-text-green'>Explore</p>
-                        <Link to="/privacy-policy" className="xui-opacity-6 xui-font-sz-80">Privacy Policy</Link>
-                        <HashLink smooth to="#" className="xui-opacity-6 xui-font-sz-80 xui-mt-1-half">Contact us</HashLink>
+                        <HashLink smooth to="/privacy-policy" className="xui-opacity-6 xui-font-sz-80">Privacy Policy</HashLink>
+                        <HashLink smooth to="/#collaborate" className="xui-opacity-6 xui-font-sz-80 xui-mt-1-half">Collaborate with us</HashLink>
                     </div>
                   
                     <div>
                         <form className="" noValidate onSubmit={handleSubmit(sendRequest)} autoComplete="off">
                             <p className='xui-font-sz-90 amd-text-green'>Subscribe</p>
                             <div className="xui-d-flex xui-flex-ai-items-center xui-font-sz-80 xui-mt-1">
-                                <div className='xui-pr-1 xui-text-white' style={{"width": "calc(100% - 40px)"}}>
+                                <div className='xui-pr-1' style={{"width": "calc(100% - 40px)"}}>
                                     <input {...register('emailAddress', {required: true, pattern: /^(?!.*@gigi\.codes$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/})} type="email" className="xui-bdr-rad-10 amd-green-bg xui-text-white contact-input xui-form-input xui-font-sz-80" placeholder="Email address" />
                                 </div>
                                 <button className="xui-w-40 xui-h-40 xui-d-flex xui-p-none xui-flex-jc-center xui-flex-ai-center amd-green-bg xui-btn xui-bdr-rad-circle">

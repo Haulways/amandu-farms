@@ -30,7 +30,7 @@ const FAQ = () => {
         <>
         <section className="xui-py-3 xui-container xui-overflow-y-hidden xui-bg-white xui-max-w-950 xui-w-fluid-100 xui-mx-auto">
             <p className="xui-font-sz-90 amd-text-green-light xui-text-center">FAQs</p>
-            <h3 className="xui-font-9 xui-font-sz-250 xui-mt-1 xui-text-center">Frequently Asked Questions</h3>
+            <h3 className=" xui-font-sz-250 xui-mt-1 xui-text-center">Frequently Asked Questions</h3>
             <Accordionitem data={faqData}/>
         </section>
         </>

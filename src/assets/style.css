@@ -1,19 +1,18 @@
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "poppins-bold";
+    font-family: "outfit-bold";
     font-style: normal;
     font-weight: 100;
-    src: url("../assets/fonts/Poppins/Poppins-Medium.ttf") format("woff");
+    src: url("../assets/fonts/Outfit/Outfit-Medium.ttf") format("woff");
 }
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: "poppins";
+    font-family: "outfit";
     font-style: normal;
     font-weight: bold;
-    src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("woff");
+    src: url("../assets/fonts/Outfit/Outfit-Regular.ttf") format("woff");
 }
+
 :root{
     --dark-blue: #020031;
     --orange: #FFB900;
@@ -56,16 +55,19 @@
     color: var(--green);
 }
 body{
-    font-family: 'poppins', sans-serif;
+    font-family: 'outfit', sans-serif;
 }
 .bold-font{
-    font-family: "poppins-bold";
+    font-family: "outfit-bold";
 }
 .amd-nav{
     background: none;
     position: fixed;
     top: 0;
     left: 0;
+}
+.xui-navbar .links ul li a {
+  font-family: 'outfit', sans-serif !important;
 }
 .xui-bg-none{
   background: none;
@@ -89,9 +91,11 @@ body{
 .xui-bdr-none{
   border: none !important;
 }
+
 .alternative-nav-color{
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  /* -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); */
+  background-color: var(--green-light);
 }
 .amd-nav a:not(.signup){
     color: #FFF;
@@ -145,6 +149,9 @@ body{
   .contact-input::placeholder{
     color: #FFF;
   }
+  .contact-input{
+    color: #FFF !important;
+  }
   .feature:hover, .benefit:hover{
     background-color: var(--dark-blue);
     color: #FFF !important;
@@ -179,20 +186,25 @@ body{
     display: block;
     width: 100%;
   }
-  .footer-line-holder::before{
+  .footer-line-holder{
+    position: relative;
+  }
+  .footer-line-holder:before{
     position: absolute;
     content: "";
-    width: 300px;
+    width: 30%;
     height: 2px;
-    left: 80px;
+    left: 8%;
+    transform: translate(10px, 10px);
     background-color: var(--green);
   }
   .footer-line-holder::after{
     position: absolute;
     content: "";
-    width: 200px;
+    width: 18%;
     height: 2px;
-    right: 280px;
+    right: 25%;
+    transform: translate(10px, 10px);
     background-color: var(--green);
   }
   .service {

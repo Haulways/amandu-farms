@@ -58,16 +58,16 @@ const Navbar = () => {
                 <div className="main dark-color primary xui-bg-white">
                     <ul>
                         <li>
-                            <NavLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" to={"/"}>Home</NavLink>
+                            <HashLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" smooth to={"/#home"}>Home</HashLink>
                         </li>
                         <li>
-                            <HashLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" smooth to={"#products"}>Product</HashLink>
+                            <HashLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" smooth to={"/#products"}>Products</HashLink>
                         </li>
                         <li>
-                            <HashLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" smooth to={"#services"}>Services</HashLink>
+                            <HashLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" smooth to={"/#services"}>Services</HashLink>
                         </li>
                         <li>
-                            <HashLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" smooth to={"#about"}>About</HashLink>
+                            <HashLink className="xui-font-sz-150 nav-links xui-md-font-sz-200 xui-lg-font-sz-100 xui-font-w-bold xui-text-inherit" smooth to={"/#about"}>About</HashLink>
                         </li>
                      
                     </ul>
