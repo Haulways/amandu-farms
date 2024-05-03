@@ -16,7 +16,7 @@ export default function Footer(){
                 <div className="xui-lg-d-flex xui-d-none xui-flex-ai-center xui-py-2 xui-pos-relative footer-line-holder xui-flex-jc-space-between xui-flex-ai-center">
                     <p className="xui-font-sz-90 xui-w-400">Join Us</p>
                     <p className="xui-font-sz-90 amd-text-green bold-font xui-text-center" style={{"width": "calc(100% - 800px)"}}>Amandu Farm</p>
-                    <p className="xui-font-sz-90 xui-w-400 bold-font xui-text-right">&copy; 2020 Powered by Grascope</p>
+                    <p className="xui-font-sz-90 xui-w-400 bold-font xui-text-right">&copy; 2024 From Grascope</p>
                 </div>
                 <div className='xui-d-grid xui-lg-grid-col-4 xui-grid-col-1 xui-lg-grid-gap-1 xui-grid-gap-2'>
                     <div>
